@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title> BooksUniverse </title>
+  <link rel="stylesheet" href="reset.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+  <header class="cabeçalho">
+    <div class="container">
+      <input type="checkbox" id="menu" class="container__botao">
+      <label for="menu">
+        <span class="cabeçalho__menu-hamburguer container__imagem"></span>
+      </label>
+      <ul class="lista-menu">
+        <li class="lista-menu__titulo">Categorias</li>
+        <li class="lista-menu__item">
+          <a href="#" class="lista-menu__link">Romances</a>
+        </li>
+        <li class="lista-menu__item">
+          <a href="#" class="lista-menu__link">Drama</a>
+        </li>
+        <li class="lista-menu__item">
+          <a href="#" class="lista-menu__link">Aventura</a>
+        </li>
+        <li class="lista-menu__item">
+          <a href="#" class="lista-menu__link">Fantasia</a>
+        </li>
+        <li class="lista-menu__item">
+          <a href="#" class="lista-menu__link">Mistério</a>
+        </li>
+      </ul>
+      <img src="img/Logo.svg" alt="Logo da Alurabooks" class="container__imagem">
+    </div>
+    <div class="container">
+      <a href="#"><img src="img/Favoritos.svg" alt="Meus favoritos" class="container__imagem"></a>
+      <a href="#"><img src="img/Compras.svg" alt="Carrinhos de compras" class="container__imagem"></a>
+      <a href="#"><img src="img/Usuario.svg" alt="Meu perfil" class="container__imagem"></a>
+    </div>
+  </header>
+
+  <section class="banner">
+    <h2 class="banner__titulo">Pronto para se apaixonar?</h2>
+    <p class="banner__texto">Encontre os romances que vão mexer com o seu coração!</p>
+    <input type="search" class="banner__pesquisa" placeholder="Qual história vai tocar seu coração?">
+  </section>
+
+  <section class="carrossel">
+    <h2 class="carrossel__titulo">Novos lançamentos</h2>
+    <!-- Slider main container -->
+    <div class="swiper">
+      <!-- Additional required wrapper -->
+      <div class="swiper-wrapper">
+        <!-- Slides -->
+        <div class="swiper-slide"><img src="https://cdn.maioresemelhores.com/imagens/mm-livros-8-cke.jpg"
+            alt="Orgulho e Preconceito"></div>
+        <div class="swiper-slide"><img src="https://th.bing.com/th/id/OIP.jYTw0H9vKA2C_JbnCUhkpgHaLG?rs=1&pid=ImgDetMain"
+            alt="Amor e Gelato"></div>
+        <div class="swiper-slide"><img src="https://cdn.maioresemelhores.com/imagens/09-a-selecao-mm-cke.jpg" alt="A Seleção">
+        </div>
+        <div class="swiper-slide">
+          <img src="https://a-static.mlcdn.com.br/800x560/livro-a-hipotese-do-amor-ali-hazelwood/cliquebooks/957320-1/941b12c0fa9edef25a05a859c1be11e9.jpg" alt="A Hipótese do Amor" />
+        </div>
+        <div class="swiper-slide">
+          <img src="https://odia.ig.com.br/_midias/jpg/2023/04/10/1200x1920/1_capa_melhordoquenosfilmes_300dpi-28654652.jpg" alt="Melhor do que nos Filmes" />
+        </div>
+        <div class="swiper-slide">
+          <img src="https://papelariacriativa.com.br/wp-content/uploads/livro-literatura-uma-farsa-de-amor-na-espanha-editora-arqueiro-1.jpg" alt="Uma Farsa de Amor na Espanha" />
+        </div>
+      </div>
+
+      <!-- If we need navigation buttons -->
+      <div class="swiper-button-prev"></div>
+      <div class="swiper-button-next"></div>
+
+    </div>
+
+    <div class="card">
+      <div class="card__descrição">
+        <div class="descrição">
+          <h3 class="descrição__titulo">Talvez você também se interesse por...</h3>
+          <h2 class="descrição__titulo-livro">A Jogada do Amor</h2>
+          <p class="descrição__texto">
+            Uma história de amor leve e envolvente, que celebra as diversas formas de se apaixonar e de se conhecer.
+          </p>
+        </div>
+        <img src="https://th.bing.com/th/id/OIP.UP7Q2xYfV-r3_LB5l1wwXwAAAA?rs=1&pid=ImgDetMain class="descrição__imagem" />
+      </div>
+      <div class="card__botões">
+        <ul class="botões">
+          <li class="botões__item">
+            <img src="img/Favoritos.svg" alt="Favoritar livro" />
+          </li>
+          <li class="botões__item">
+            <img src="img/Compras.svg" alt="Adicionar no carrinho de compras" />
+          </li>
+        </ul>
+        <a href="#" class="botões__ancora">Saiba mais</a>
+      </div>
+    </div>
+
+  </section>
+
+  <section class=”carrossel”>
+    <h2 class="carrossel__titulo">Mais vendidos</h2>
+    <div class="swiper">
+      <!-- Additional required wrapper -->
+      <!-- If we need pagination -->
+      <div class="swiper-pagination"></div>
+
+      <div class="swiper-wrapper">
+        <!-- Slides -->
+        <div class="swiper-slide"><img src="https://images.dlivros.org/Alexis-Daria/acho-adeus-primas-poderosas-alexis-daria_large.webp"
+            alt="Acho que é um Adeus"></div>
+        <div class="swiper-slide"><img src="https://m.media-amazon.com/images/I/811C5HHCWlL._SL1500_.jpg" alt="Ouvi Dizer que era Você">
+        </div>
+        <div class="swiper-slide"><img src="https://i.pinimg.com/originals/b2/8b/81/b28b81dd8f5c254b7d3ccab86117988c.jpg" alt="Querido e Estúpido Primeiro Amor">
+        </div>
+        <div class="swiper-slide"><img src="https://m.media-amazon.com/images/I/71TYuSSwpuL._SL1500_.jpg" alt="De Repente Namoradas"></div>
+        <div class="swiper-slide"><img src="https://img.skoob.com.br/RykMu5OjxV_iSgTinaG749sUNGE=/200x/center/top/smart/filters:format(jpeg)/https://skoob.s3.amazonaws.com/livros/122478887/ATE_QUE_ELE_DIGA_SIM_1721523958122478887SK-V11721523959B.jpg" alt="Até que Ele Diga Sim"></div>
+        <div class="swiper-slide"><img src="https://img.travessa.com.br/livro/GR/8e/8e774f52-c687-46c9-8a35-394e4ea24e43.jpg" alt="Como Conduzir um Romance"></div>
+      </div>
+
+      <!-- If we need navigation buttons -->
+      <div class="swiper-button-prev"></div>
+      <div class="swiper-button-next"></div>
+    </div>
+
+    <div class="card">
+      <!-- 1º linha -->
+      <div class="card__descrição">
+        <!-- 1º coluna -->
+        <div class="descrição">
+          <img src="img/Estrelinhas.svg" alt="Avaliação 5 estrelas">
+          <h3 class="descrição__titulo">Autora do Mês</h3>
+          <h2 class="descrição__titulo-livro">Samantha Wilkerson</h2>Autora best-seller de romances contemporâneos e histórias de amor eternas.
+          </p>
+        </div>
+        <!-- 2º coluna -->
+        <img src="img/Escritora.svg" class="descrição__imagem">
+      </div>
+
+      <!-- 2º linha -->
+      <div class="card__botões">
+        <!-- 1º coluna -->
+        <ul class="botões">
+          <li class="botões__item"><img src="img/Favoritos.svg" alt="Favoritar livro"></li>
+          <li class="botões__item"><img src="img/Compras.svg" alt="Adicionar no carrinho de compras"></li>
+        </ul>
+        <!-- 2º coluna -->
+        <a href="#" class="botões__ancora">Saiba mais</a>
+      </div>
+    </div>
+
+
+
+  </section>
+
+  <section class="tópicos">
+    <h2 class="tópicos__titulo">TÓPICOS VISITADOS RECENTEMENTE</h2>
+    <ul class="tópicos__lista">
+      <li class="tópicos__item"><a href="#" class="tópicos__link">Romances de Verão</a></li>
+      <li class="tópicos__item">
+        <a href="#" class="tópicos__link">Amor Jovem</a>
+      </li>
+      <li class="tópicos__item">
+        <a href="#" class="tópicos__link">Romances de Fantasia</a>
+      </li>
+      <li class="tópicos__item">
+        <a href="#" class="tópicos__link">Drama e Romance</a>
+      </li>
+      <li class="tópicos__item">
+        <a href="#" class="tópicos__link">Amor à Primeira Vista</a>
+      </li>
+      <li class="tópicos__item">
+        <a href="#" class="tópicos__link">Amor e Amizade</a>
+      </li>
+      <li class="tópicos__item">
+        <a href="#" class="tópicos__link">Amor Jovem</a>
+      </li>
+      <li class="tópicos__item">
+        <a href="#" class="tópicos__link">Mistérios do Coração</a>
+      </li>
+    </ul>
+  </section>
+
+  <section class="contato">
+    <h2 class="contato__titulo">Receba Novidades do Mundo dos Romances!</h2>
+    <p class="contato__texto">
+        Atualizações sobre novos lançamentos, promoções especiais e muito mais.
+    </p>
+    <input type="email" placeholder="Cadastre seu e-mail" class="contato__email" />
+  </section>
+
+  <hr />
+
+  <footer class="rodapé">
+    <h2 class="rodapé__titulo">BooksUniverse</h2>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script>
+    const swiper = new Swiper(".swiper", {
+      spaceBetween: 20,
+      slidesPerView: 6,
+      pagination: {
+        el: ".swiper-pagination",
+        type: "bullets",
+      },
+    });
+  </script>
+</body>
+
+</html>
